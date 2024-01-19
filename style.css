@@ -1,0 +1,41 @@
+/* This is a CSS file */
+
+/* Limit the width of the main element */
+main {
+  max-width: 840px;[^1^][1]
+}
+
+/* Style the aside element */
+aside {
+  width: 20rem;
+  margin: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.2); /* A subtle, transparent border */
+  padding: 1rem;
+  background-color: #eee; /* A light gray background color */
+  color: #333; /* A dark gray text color */
+  text-align: center; /* Center the text */
+}
+
+/* Set the width and height of the image inside the aside element */
+aside img {
+  width: 200px;[^2^][2]
+  height: auto; /* This preserves the aspect ratio of the image */
+}
+
+/* Set the width and height of the image inside the main element */
+main img {
+  width: 150px;
+  height: auto;
+}
+
+/* Remove the padding of the paragraph element */
+p {
+  padding: 0;
+}
+
+/* Style the footer element */
+footer {
+  margin-top: 15px; /* Add some space above the footer */
+  border-top: 1px solid #000; /* Add a thin black border above the footer */
+  text-align: center; /* Center the text in the footer */
+}

@@ -1,0 +1,66 @@
+/* Import the fonts from Google Fonts API */
+@import url('https://fonts.googleapis.com/css2?family=Arial&family=Georgia&display=swap');
+
+/* Define the CSS variables for the colors and fonts */
+:root {
+  --primary-color: #0099ff; /* A light blue color */
+  --secondary-color: #006699; /* A darker blue color */
+  --accent1-color: #00cc66; /* A green color */
+  --accent2-color: #ff6600; /* An orange color */
+
+  --heading-font: 'Arial', sans-serif;
+  --paragraph-font: 'Georgia', serif;
+
+  --nav-background-color: var(--primary-color);
+  --nav-link-color: white;
+  --nav-hover-link-color: black;
+  --nav-hover-background-color: var(--accent2-color);
+}
+
+/* Set the body style */
+body {
+  font-family: var(--paragraph-font);
+  max-width: 960px;
+  padding: 20px;
+  margin: 0 auto;
+}
+
+/* Group the headings and set their style */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--secondary-color);
+}
+
+/* Set the header style */
+header {
+  padding: 20px;
+  background-color: var(--accent1-color);
+}
+
+/* Set the paragraph style */
+p {
+  padding: 25px;
+}
+
+/* Set the nav style and its anchor tag children */
+nav {
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
