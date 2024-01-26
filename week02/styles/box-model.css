@@ -1,0 +1,35 @@
+/* Style for the .callout class */
+.callout {
+    max-width: 400px; /* adjust as needed */
+    margin: 10px auto; /* adjust as needed */
+    border: 1px solid #000; /* adjust as needed */
+    padding: 15px; /* adjust as needed */
+    background-color: #247; /* adjust as needed */
+    color: #fff; /* adjust as needed */
+  }
+  
+  /* Style for the image */
+  img {
+    float: right; /* adjust as needed */
+    margin: 0 0 10px 15px; /* adjust as needed */
+    border: 1px solid #000; /* adjust as needed */
+    padding: 3px; /* adjust as needed */
+    background-color: #bbb; /* adjust as needed */
+    width: 100px; /* adjust as needed */
+    height: auto;
+  }
+  
+  /* Style for the blockquote */
+  blockquote {
+    margin: 0px; /* adjust as needed */
+  }
+  
+  /* Style for the cite */
+  cite {
+    display: block; /* adjust as needed */
+    border-top: 1px solid #000; /* adjust as needed */
+    padding-top: 3px; /* adjust as needed */
+    text-align: right; /* adjust as needed */
+    font-size: smaller; /* adjust as needed */
+  }
+  
