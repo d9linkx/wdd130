@@ -16,6 +16,11 @@
   color: #000;
 }
 
+main img {
+  /* you most likely will have other declarations here */
+  float: right;
+}
+
 nav {
   background-color: steelblue;
   padding: 5px;
