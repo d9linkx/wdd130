@@ -10,8 +10,8 @@
   }
    /* Header and footer styles */
   header, footer, .grid {
-    max-width: 840;
-    margin: 0;
+    max-width: 840px;
+    margin: 0 auto;
     display: grid;
     align-items: center;
     grid-template-areas:
