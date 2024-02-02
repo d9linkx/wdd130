@@ -5,50 +5,13 @@
   box-sizing: border-box;
 }
 
+/* Class Selectors */
+
 nav ul {
   display: flex;
 }
 
-/* Header and footer styles, with grid added */
-header, .grid, footer {
-  display: grid;
-  align-items: center;
-  max-width: 840px;
-  margin: 0 auto;
-
-}
-
-/* Grid container styles */
-.grid {
-  display: grid;
-  align-items: center;
-  grid-template-areas: 
-    "aside main";
-}
-
-/* Main section styles */
-main {
-  grid-column: 2/3;
-  margin: 1rem;
-}
-
-/* Aside section styles */
-aside {
-  grid-area: aside;
-  width: 20rem;
-  position: relative;
-  grid-column: 1/2;
-  
-  margin: 1rem;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  padding: 1rem;
-  background-color: #eee;
-  color: #333;
-  text-align: center;
-}
-
-
-/* Navigation styles */
+  /* Navigation styles */
 nav {
   background-color: steelblue;
   padding: 1rem;
@@ -56,23 +19,56 @@ nav {
   justify-content: space-evenly;
   align-items: center;
 }
+    
+  nav a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff; /* shorthand for white */
+  }
 
-nav a {
-  display: block;
-  padding: 0.5rem;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: #fff; /* shorthand for white */
+/* Header and footer styles */
+header, .grid footer {
+
+  max-width: 840px;
+  margin: 0 auto;
 }
 
-/* Heading styles */
+  /* Grid container styles */
+.grid {
+  display: grid;
+  align-items: center;
+  grid-template-areas: 
+    "aside main";
+}
+
+  /* Main section styles */
+  main {
+    grid-column: 2/3;
+    margin: 1rem;
+  }
+
+/* Style for the .box class */
+.box {
+  margin: 1rem;
+  border: 1px solid rgba(0,0,0,.1);
+  padding: 1rem;
+  background-color: #ddd;
+  color: #000;
+}
+
+main img {
+  /* you most likely will have other declarations here */
+  float: right;
+}
+
 h1 {
   color: steelblue;
   border-bottom: 1px solid steelblue;
 }
 
-/* Image styles */
 img {
   width: 190px;
   height: auto;
@@ -81,20 +77,13 @@ img {
   box-shadow: 0 0 30px gray;
 }
 
-/* Paragraph styles */
 p {
   padding: 10px; /* adjust as needed */
 }
 
-/* Grid container styles */
-.grid {
-  display: grid;
-  align-items: center;
-}
-
-/* Main section styles */
-main {
-  grid-column: 2/3;
+ /* Main section styles */
+ main {
+  grid-area: main;
   margin: 1rem;
 }
 
@@ -106,12 +95,12 @@ main img {
   margin: 0 0 1rem 1rem;
 }
 
-/* Aside section styles */
+  /* Aside section styles */
 aside {
-  position: relative;
+  grid-area: aside;
   width: 20rem;
+  position: relative;
   grid-column: 1/2;
-  grid-row: 1/2;
   margin: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 1rem;
@@ -120,20 +109,27 @@ aside {
   text-align: center;
 }
 
-/* Aside heading styles */
 aside h2 {
   position: absolute;
   top: 47px;
   left: 150px;
 }
 
-/* Aside image styles */
+/* Set the width of the image inside the aside element and maintain its aspect ratio */
 aside img {
   width: 200px;
   height: auto;
 }
 
-/* Footer styles */
+/* Change the selector for the existing profile img to be more exclusive */
+main img {
+  float: right;
+  width: 190px;
+  height: auto;
+  margin: 0 0 1rem 1rem;
+}
+
+/* Style the footer element */
 footer {
   margin-top: 15px;
   border-top: 1px solid #000;
