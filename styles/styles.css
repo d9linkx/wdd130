@@ -59,12 +59,8 @@
     color: #fff; /* shorthand for white */
   }
    h1 {
-    h1 {
-      font-family: Arial, sans-serif;
-      font-size: 3rem;
-      color: steelblue;
-      text-align: center;
-      border-bottom: 1px solid steelblue;
+    color: steelblue;
+    border-bottom: 1px solid steelblue;
   }
    img {
     width: 190px;
