@@ -12,12 +12,12 @@ nav ul {
 }
 
 /* Header and footer styles */
-header, footer .grid {
+header, footer {
   max-width: 840px;
   margin: 0 auto;
 }
-
-  /* Grid container styles */
+  
+/* Grid container styles */
 .grid {
   display: grid;
   align-items: center;
@@ -26,10 +26,10 @@ header, footer .grid {
 }
 
   /* Main section styles */
-  main {
-    grid-column: 2/3;
-    margin: 1rem;
-  }
+main {
+  grid-column: 2/3;
+  margin: 1rem;
+}
 
 /* Style for the .box class */
 .box {
