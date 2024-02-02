@@ -18,12 +18,12 @@ header, footer .grid {
 }
 
   /* Grid container styles */
-  .grid {
-    display: grid;
-    align-items: center;
-    grid-template-areas: 
-      "aside main";
-  }
+.grid {
+  display: grid;
+  align-items: center;
+  grid-template-areas: 
+    "aside main";
+}
 
   /* Main section styles */
   main {
