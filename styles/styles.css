@@ -9,12 +9,19 @@
     display: flex;
   }
    /* Header and footer styles */
-  header, footer, .grid {
+  header, footer {
     max-width: 840 px;
     margin: 0 auto;
     display: grid;
     align-items: center;
     grid-template-areas:
+      "aside main";
+  }
+/* Grid container styles */
+  .grid {
+    display: grid;
+    align-items: center;
+    grid-template-areas: 
       "aside main";
   }
      /* Main section styles */
