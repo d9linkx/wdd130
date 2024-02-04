@@ -12,7 +12,7 @@
   header, .grid, footer {
     max-width: 840px;
     margin: 0 auto;
-    display: grid;
+    display: -ms-inline-grid;
     align-items: center;
     grid-template-areas:
       "aside main";
@@ -59,7 +59,7 @@
     color: #fff; /* shorthand for white */
   }
    h1 {
-    color: steelblue;
+    color: #4682b4;
     border-bottom: 1px solid steelblue;
   }
    img {
@@ -112,16 +112,24 @@
    /* Change the selector for the existing profile img to be more exclusive */
   main img {
     float: right;
-    width: 100px;
+    width: 180px;
     height: auto;
     margin: 0 0 1rem 1rem;
   }
    /* Style the footer element */
   footer {
     margin-top: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
     border-top: 1px solid #000;
+    background-color: #4682b4;
     text-align: center;
+    color: white;
+    display: table;
+    vertical-align: middle;
+    justify-content: space-around;
   }
+
   
-  
- 
