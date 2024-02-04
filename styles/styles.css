@@ -8,23 +8,51 @@
    nav ul {
     display: flex;
   }
+  
    /* Header and footer styles */
   header, .grid, footer {
     max-width: 840px;
+    border-spacing: 20px 10px;
     margin: 0 auto;
-    display: -ms-inline-grid;
+    display: flex;
     align-items: center;
     grid-template-areas:
       "aside main";
   }
-/* Grid container styles */
+
+    /* The header */
+    .header {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    /* The menu items */
+    .header ul li {
+      list-style-type: none; /* Remove bullets */
+    }
+
+  /* Add 10px of padding to the top and bottom, and 20px to the left and right */
+    .menu-item {
+      border-spacing: 20px 10px;
+  }
+
+  /* Grid container styles */
   .grid {
     display: grid;
     align-items: center;
     grid-template-areas: 
       "aside main";
   }
-     /* Main section styles */
+
+
+  /* The body element */
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-size: medium;
+  }
+
+
+  /* Main section styles */
   main {
     grid-area: 1/3;
     margin: 1rem;
@@ -35,7 +63,7 @@
     border: 1px solid rgba(0,0,0,.1);
     padding: 1rem;
     background-color: #ddd;
-    color: #000;
+    color: rgb(42, 43, 43);
   }
    main img {
     /* you most likely will have other declarations here */
@@ -52,7 +80,7 @@
    
   nav a {
     display: block;
-    padding: 0.5rem;
+    padding: 1.5rem;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: 700;
@@ -98,16 +126,18 @@
     background-color: #eee;
     color: #333;
     text-align: center;
+    font-size: medium;
   }
-   aside h2 {
+  aside h2 {
     position: absolute;
-    top: 47px;
-    left: 150px;
+    top: 20px;
+    left: 120px;
   }
    /* Set the width of the image inside the aside element and maintain its aspect ratio */
   aside img {
-    width: 200px;
+    width: 170px;
     height: auto;
+
   }
    /* Change the selector for the existing profile img to be more exclusive */
   main img {
@@ -116,15 +146,16 @@
     height: auto;
     margin: 0 0 1rem 1rem;
   }
+
    /* Style the footer element */
   footer {
-    margin-top: 15px;
+    margin-top: 10px;
     position: relative;
     bottom: 0;
     width: 100%;
     height: 100px;
     border-top: 1px solid #000;
-    background-color: #4682b4;
+    background-color: steelblue;
     text-align: center;
     color: white;
     display: table;
@@ -132,4 +163,13 @@
     justify-content: space-around;
   }
 
-  
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+
+    .navbar li {
+      list-style-type: none; /* Remove bullets */
+    }
+
