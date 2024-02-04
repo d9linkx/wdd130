@@ -23,6 +23,7 @@
     /* The header */
     .header {
       display: flex;
+      margin: auto;
       justify-content: space-around;
     }
 
@@ -137,6 +138,7 @@
   aside img {
     width: 170px;
     height: auto;
+
   }
    /* Change the selector for the existing profile img to be more exclusive */
   main img {

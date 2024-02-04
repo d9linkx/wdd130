@@ -7,10 +7,10 @@
 }
 
    /* Class Selectors */
-   nav ul {
-    display: flex;
-  }
-  
+nav ul {
+  display: flex;
+}
+
    /* Header and footer styles */
 header, .grid, footer {
   max-width: 840px;
@@ -23,17 +23,60 @@ header, .grid, footer {
 }
 
   /* The header */
-  .header {
-    display: flex;
-    justify-content: space-around;
-  }
+.header {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem auto;
+	display: grid;
+	grid-template-columns: 120px 1fr;
+}
 
     /* The menu items */
-    .header nav {
-      list-style-type: none; /* Remove bullets */
-      justify-content: space-evenly;
-    }
-    
+.header nav {
+  list-style-type: none; /* Remove bullets */
+  justify-content: space-around;
+}
+
+/* Header */
+.site-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto; /* Logo | Title | Nav */
+  align-items: center; /* Vertically center items */
+  padding: 1rem;
+  background-color: rgb(61, 61, 61);
+  color: #ffffff;
+}
+
+/* Logo */
+.logo {
+  max-width: 100px; /* Adjust as needed */
+}
+
+/* Site Title */
+.site-title {
+  font-size: 1.7rem;
+  color: #cecece;
+  padding: 1rem;
+  margin: 0;
+}
+
+/* Main Navigation */
+.main-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Style individual nav links (adjust as needed) */
+.main-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.main-nav a:hover {
+  color: #ff9900;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--text-color);
