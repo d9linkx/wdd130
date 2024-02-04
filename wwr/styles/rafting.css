@@ -6,10 +6,38 @@
   --text-color: black;
 }
 
+   /* Class Selectors */
+   nav ul {
+    display: flex;
+  }
+  
+   /* Header and footer styles */
+header, .grid, footer {
+  max-width: 840px;
+  border-spacing: 20px 10px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  grid-template-areas:
+      "aside main";
+}
+
+  /* The header */
+  .header {
+    display: flex;
+    justify-content: space-around;
+  }
+
+    /* The menu items */
+    .header nav {
+      list-style-type: none; /* Remove bullets */
+      justify-content: space-evenly;
+    }
+    
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--text-color);
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
