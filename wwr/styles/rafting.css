@@ -43,7 +43,7 @@ header, .grid, footer {
   grid-template-columns: auto 1fr auto; /* Logo | Title | Nav */
   align-items: center; /* Vertically center items */
   padding: 2rem;
-  background-color: rgb(61, 61, 61);
+  background-color: #3d3d3d;
   color: #ffffff;
 }
 
@@ -138,35 +138,56 @@ a.sociallink {
  /* Style the footer element */
  footer {
   margin-top: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    height: 100px;
-    border-top: 1px solid #000;
-    background-color: steelblue;
-    text-align: center;
-    color: white;
-    display: table;
-    vertical-align: middle;
-    justify-content: space-around;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  border-top: 1px solid #000;
+  background-color: steelblue;
+  text-align: center;
+  color: white;
+  display: table;
+  vertical-align: middle;
+  justify-content: space-around;
 }
 
-  .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
+/* rafting.css */
 
-  .navbar li {
-    list-style-type: none; /* Remove bullets */
-  }
+/* Footer */
+footer {
+  background-color: #c9c9c9;
+  color: #ffffff;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between; /* Align content to the right */
+  align-items: center; /* Vertically center items */
+}
 
-
-/* Style the social icons */
-.social-icons {
+/* Social Icons */
+.sociallinks {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
   gap: 1rem; /* Adjust spacing between icons */
 }
+
+.sociallinks a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.sociallinks a:hover {
+  color: #ff9900; /* Hover color */
+}
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .navbar li {
+    list-style-type: none; /* Remove bullets */
+  }
