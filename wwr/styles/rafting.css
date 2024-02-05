@@ -42,7 +42,7 @@ header, .grid, footer {
   display: grid;
   grid-template-columns: auto 1fr auto; /* Logo | Title | Nav */
   align-items: center; /* Vertically center items */
-  padding: 1rem;
+  padding: 2rem;
   background-color: rgb(61, 61, 61);
   color: #ffffff;
 }
@@ -101,14 +101,14 @@ a.sociallink {
 }
 
 .hero img {
-  display: block;
+  display: flex;
   width: 100%;
   height: auto;
 }
 
 .hero h1 {
   position: absolute;
-  top: 50%;
+  top: 85%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -116,7 +116,7 @@ a.sociallink {
 .hero article {
   position: absolute;
   top: 60%;
-  left: 50%;
+  left:80%;
   transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255, 0.7);
   padding: 20px;
@@ -124,7 +124,7 @@ a.sociallink {
 
 .hero article img {
   float: right;
-  margin-left: 20px;
+  margin-left: 0px;
 }
 
 .box {
@@ -134,3 +134,37 @@ a.sociallink {
   background-color: #f2f2f2;
   color: black;
 }
+
+ /* Style the footer container */
+footer {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end; /* Align content to the right */
+}
+
+/* Style the social icons */
+.social-icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem; /* Adjust spacing between icons */
+}
+
+.social-icons li {
+  /* Style each social icon (adjust size, color, etc.) */
+}
+
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .navbar li {
+    list-style-type: none; /* Remove bullets */
+  }
+
