@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+sans-serif');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&display=swap');
 
 :root {
   --primary-color: #333;
@@ -116,7 +116,7 @@ a.sociallink {
 .hero article {
   position: absolute;
   top: 60%;
-  left: 80%;
+  left:80%;
   transform: translate(-50%, -50%);
   background-color: rgba(255, 255, 255, 0.7);
   padding: 20px;
@@ -137,7 +137,7 @@ a.sociallink {
 
  /* Style the footer element */
  footer {
-    margin-top: 10px;
+  margin-top: 10px;
     position: relative;
     bottom: 0;
     width: 100%;
@@ -160,3 +160,13 @@ a.sociallink {
   .navbar li {
     list-style-type: none; /* Remove bullets */
   }
+
+
+/* Style the social icons */
+.social-icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1rem; /* Adjust spacing between icons */
+}
