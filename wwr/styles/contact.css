@@ -1,16 +1,17 @@
-/* CSS Variables */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&display=swap');
+
 :root {
   --primary-color: #333;
   --secondary-color: #666;
   --text-color: black;
 }
 
-/* Class Selectors */
+   /* Class Selectors */
 nav ul {
   display: flex;
 }
 
-/* Header and footer styles */
+   /* Header and footer styles */
 header, .grid, footer {
   max-width: 840px;
   border-spacing: 20px 10px;
@@ -21,7 +22,7 @@ header, .grid, footer {
       "aside main";
 }
 
-/* The header */
+  /* The header */
 .header {
   display: flex;
   justify-content: space-around;
@@ -30,7 +31,7 @@ header, .grid, footer {
 	grid-template-columns: 120px 1fr;
 }
 
-/* The menu items */
+    /* The menu items */
 .header nav {
   list-style-type: none; /* Remove bullets */
   justify-content: space-around;
@@ -81,14 +82,6 @@ body {
   color: var(--text-color);
   max-width: 900px;
   margin: 0 auto;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  color: var(--primary-color);
-}
-
-p {
-  color: var(--text-color);
 }
 
 a.sociallink {
@@ -181,6 +174,17 @@ footer {
   color: #ff9900; /* Hover color */
 }
 
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .navbar li {
+    list-style-type: none; /* Remove bullets */
+  }
+
+
 /* Contact Form */
 .contact-form {
   display: grid;
@@ -191,10 +195,11 @@ footer {
 
 .contact-form label {
   display: block; /* Display labels as blocks */
-  font-family: 'Roboto', sans-serif; /* Font family */
-  font-size: 1rem; /* Font size */
-  color: var(--primary-color); /* Text color */
   margin-bottom: 0.5rem; /* Spacing below labels */
+}
+
+.contact-form input[type=text], input[type=email], textarea, .employee-profiles .profile figcaption {
+  font-family: 'Roboto', sans-serif; /* Font family */
 }
 
 .contact-form input[type=text], input[type=email], textarea {
@@ -204,8 +209,6 @@ footer {
   padding: 0.5rem; /* Padding inside elements */
   border: 1px solid var(--secondary-color); /* Border color */
   border-radius: 0.5rem; /* Rounded corners */
-  font-family: 'Roboto', sans-serif; /* Font family */
-  font-size: 1rem; /* Font size */
   color: var(--text-color); /* Text color */
 }
 
@@ -248,7 +251,7 @@ footer {
 
 /* Employee Profiles */
 .employee-profiles {
-  display: flex; /* Display profiles as flex items */
+  display: block; /* Display profiles as flex items */
   justify-content: space-around; /* Distribute space evenly */
   align-items: center; /* Vertically center items */
   margin: 2rem; /* Margin around the profiles */
@@ -258,27 +261,78 @@ footer {
   display: flex; /* Display profile as flex item */
   flex-direction: column; /* Stack elements vertically */
   align-items: center; /* Horizontally center elements */
-  width: 20%; /* Fixed width */
-}
-
-.employee-profiles .profile img {
-  width: 100%; /* Full width */
-  height: auto; /* Adjust height to aspect ratio */
-  border-radius: 50%; /* Circular shape */
-  margin-bottom: 1rem; /* Spacing below image */
+  width: 2%; /* Fixed width */
 }
 
 .employee-profiles .profile figcaption {
-  font-family: 'Roboto', sans-serif; /* Font family */
-  font-size: 1rem; /* Font size */
-  color: var(--primary-color); /* Text color */
   text-align: center; /* Center text */
 }
 
 /* Google Map */
 .google-map {
-  width: 600px; /* Adjust width as needed */
-  height: 450px; /* Adjust height as needed */
   margin: 1rem; /* Margin around the map */
   border: 1px solid var(--secondary-color); /* Border color */
+}
+
+/* Full Width */
+.full-width {
+  width: 100%; /* Full width */
+  height: auto; /* Adjust height to aspect ratio */
+}
+
+/* The header */
+.header {
+  margin: auto;
+  justify-content: space-around;
+}
+
+/* The menu items */
+.header ul li {
+  list-style-type: none; /* Remove bullets */
+}
+
+/* Add 10px of padding to the top and bottom, and 20px to the left and right */
+.menu-item {
+  border-spacing: 20px 10px;
+}
+
+/* Grid container styles */
+.grid {
+  display: grid;
+  align-items: center;
+  grid-template-areas: 
+    "aside main";
+}
+
+
+/* The body element */
+body {
+  font-size: medium;
+}
+
+
+/* Main section styles */
+main {
+  grid-area: 1/3;
+  margin: 1rem;
+}
+ /* Style for the .box class */
+.box {
+  margin: 1rem;
+  border: 1px solid rgba(0,0,0,.1);
+  padding: 1rem;
+  background-color: #ddd;
+  color: rgb(42, 43, 43);
+}
+ main img {
+  /* you most likely will have other declarations here */
+  float: right;
+}
+   /* Navigation styles */
+nav {
+  background-color: steelblue;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
