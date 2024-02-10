@@ -268,12 +268,6 @@ footer {
   text-align: center; /* Center text */
 }
 
-/* Google Map */
-.google-map {
-  margin: 1rem; /* Margin around the map */
-  border: 1px solid var(--secondary-color); /* Border color */
-}
-
 /* Full Width */
 .full-width {
   width: 100%; /* Full width */
