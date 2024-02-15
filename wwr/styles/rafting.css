@@ -12,6 +12,11 @@ nav ul {
   display: flex;
 }
 
+/* The navigation menu */
+header nav {
+  background-color: inherit; /* Inherit the background color from the parent element (header) */
+}
+
 header nav ul {
   display: flex;
   gap: 20px;
@@ -22,7 +27,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  color: #fff;
+  color: #4682b4;
   text-decoration: none;
 }
 
@@ -48,7 +53,7 @@ header, .grid, footer {
   grid-template-columns: auto 1fr auto; /* Logo | Title | Nav */
   align-items: center; /* Vertically center items */
   padding: 2rem;
-  background-color: #b03f3f;
+  background-color: #ebebeb;
   color: #ffffff;
 }
 
