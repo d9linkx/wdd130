@@ -230,19 +230,13 @@ footer {
 }
 
 .contact-form button[type=submit] {
-  grid-column: span 2; /* Span two columns */
-  width: 50%; /* Half width */
-  height: 3rem; /* Fixed height */
-  margin: 0 auto; /* Center the button */
-  padding: 0.5rem; /* Padding inside button */
-  border: none; /* Remove border */
-  border-radius: 0.5rem; /* Rounded corners */
-  background-color: var(--primary-color); /* Background color */
-  font-family: 'Roboto', sans-serif; /* Font family */
-  font-size: 1.5rem; /* Font size */
-  color: #ffffff; /* Text color */
-  cursor: pointer; /* Cursor style */
-  transition: background-color 0.3s; /* Transition effect */
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff; /* white text */
+  background-color: #4682b4; /* blue background */
+  text-decoration: none; /* remove underline */
+  border-radius: 5px; /* rounded corners */
+  transition: background-color 0.3s ease; /* smooth color change */
 }
 
 .contact-form button[type=submit]:hover {
@@ -330,3 +324,21 @@ nav {
   justify-content: space-evenly;
   align-items: center;
 }
+
+
+/* New CSS codes*/
+
+.cta-view-button, .cta-join-button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff; /* white text */
+  background-color: #4682b4; /* blue background */
+  text-decoration: none; /* remove underline */
+  border-radius: 5px; /* rounded corners */
+  transition: background-color 0.3s ease; /* smooth color change */
+}
+
+.cta-view-button:hover, .cta-join-button:hover {
+  background-color: #5a9; /* change color when mouse hovers over it */
+}
+
