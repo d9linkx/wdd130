@@ -7,24 +7,51 @@
     <meta name="keywords" content="Prince Chidera Dike, content marketer, tech maven, template maven, web3, artificial intelligence, software development, BYU-Idaho">
     <meta name="author" content="Prince Chidera Dike">
     <title>White Water Rafting | Home</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
     <header>
-        <!-- Your header content goes here -->
+        <div class="logo">
+            <img src="images/logo.png" alt="White Water Rafting Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="trips.html">Trips</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <section id="hero">
             <!-- Your full-width image and heading message go here -->
         </section>
+        <!-- Newsletter Sign-up Form -->
         <section id="newsletter">
-            <!-- Your newsletter sign up form goes here -->
+            <h2>Join the Adventure Guild!</h2>
+            <p>Get exclusive updates, discounts, and insider tips from the world of white water rafting. Enter the rapid flow of information!</p>
+            <form action="submit_form.html" method="post">
+                <label for="name">Adventurer's Name:</label><br>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+                <label for="email">Adventurer's Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+                <input type="submit" value="Join the Guild">
+            </form>
         </section>
+
+        <!-- Call to Action -->
+        <section id="cta">
+            <h2>Ready for an Adventure?</h2>
+            <p>Our trips are more than just a journey, they're a step into the heart of nature. Don't just visit the river, experience it Check out our exciting trips and book your adventure today!</p>
+            <a href="trips.html" class="cta-button">View Trips</a>
+        </section>
+
         <section id="cta">
             <!-- Your call to action goes here -->
         </section>
         <section id="offerings">
-            <!-- Your CSS grid layout with images and content about the site purpose and offerings go here -->[^1^][1]
+            <!-- Your CSS grid layout with images and content about the site purpose and offerings go here -->
         </section>
     </main>
     <footer>
