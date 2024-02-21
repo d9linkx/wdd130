@@ -42,7 +42,7 @@ header nav ul li a {
 }
 
    /* Header and footer styles */
-header, .grid, footer {
+header, footer, .grid {
   display: flex;
   gap: 10px;
   justify-content: space-between;
