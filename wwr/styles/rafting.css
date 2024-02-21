@@ -1,5 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&display=swap');
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
 :root {
   --primary-color: #333;
   --secondary-color: #666;
