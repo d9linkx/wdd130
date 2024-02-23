@@ -358,7 +358,6 @@ nav {
   align-items: center;
 }
 
-
 /* New CSS codes*/
 
 .cta-view-button, .cta-join-button {
@@ -375,7 +374,23 @@ nav {
   background-color: #5a9; /* change color when mouse hovers over it */
 }
 
+.trip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trip img {
+  width: 350px; /* Adjust this value to your desired size */
+  height: auto;
+  border:#4682b4;
+  border-style:ridge;
+  box-shadow: #333;
+  box-sizing: border-box;
+  margin: 0.5rem;
+}
+
 .profile img {
   width: 200px; /* Adjust this value to your desired size */
-  height: auto;;
+  height: auto;
 }
