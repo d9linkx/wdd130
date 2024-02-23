@@ -394,3 +394,19 @@ nav {
   width: 200px; /* Adjust this value to your desired size */
   height: auto;
 }
+
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.images {
+  width: 200px; /* Adjust this value to your desired size */
+  height: auto;
+  border:#4682b4;
+  border-style:ridge;
+  box-shadow: #333;
+  box-sizing: border-box;
+  margin: 0.5rem;
+}
